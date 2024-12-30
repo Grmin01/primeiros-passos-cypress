@@ -7,5 +7,12 @@
       "userFail": {
         "username": "test",
         "password": "test"
+      },
+
+      "PersonalDetails": {
+        "firstName": "Alex",
+        "lastName": "Sandro",
+        "nickName": "grmin"
       }
+
   }

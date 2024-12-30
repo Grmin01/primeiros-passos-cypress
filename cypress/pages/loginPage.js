@@ -4,7 +4,7 @@ class LoginPage {
             usernameField: "[name='username']",
             passwordField: "[name='password']",
             loginButton: "[type='submit']",
-            credentialAlert: "[role='alert']",
+            credentialAlert: "[role='alert']"            
         }
         // retornar a contante para funcionar loginWithUser
         return selectors
@@ -16,8 +16,11 @@ class LoginPage {
     loginWithUse(username, password) {
         cy.get(this.selectortList().usernameField).type(username)
         cy.get(this.selectortList().passwordField).type(password)        
-        cy.get(this.selectortList().loginButton).click()
-        
+        cy.get(this.selectortList().loginButton).click()        
+    }
+
+    checkAccessInvalid(){
+        cy.get(this.selectortList().credentialAlert) 
     }
 }
 
