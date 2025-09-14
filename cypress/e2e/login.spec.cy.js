@@ -24,7 +24,7 @@ describe('orange HRM Tests', () => {
   //}
 
   it('Login - Success', () => {  // quando quiser pular uma aprte do codigo usar .skip
-    cy.visit('https:/opensource-demo.orangehrmlive.com/web/index.php/auth/login') // abriando a pagina
+    cy.visit('/auth/login') // abriando a pagina
     //Loguin usuario e senha
     cy.get(selectorsList.usernameField).type(userData.userSuccess.username) //Usuario
     cy.get(selectorsList.passwordField).type(userData.userSuccess.password)  // Senha
@@ -36,7 +36,7 @@ describe('orange HRM Tests', () => {
     cy.get(selectorsList.dashboardGrid)  // verificando so com elemento existente
   })
   it('Login - Fail', () => {
-    cy.visit('https:/opensource-demo.orangehrmlive.com/web/index.php/auth/login') // abriando a pagina
+    cy.visit('/auth/login') // abriando a pagina
     //Loguin usuario e senha
     cy.get(selectorsList.usernameField).type(userData.userFail.username) //Usuario
     cy.get(selectorsList.passwordField).type(userData.userFail.password)  // Senha
