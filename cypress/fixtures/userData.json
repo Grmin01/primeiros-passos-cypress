@@ -3,10 +3,12 @@
       "username": "Admin",
       "password": "admin123"
     },
+    
     "userFail": {
       "username": "Teste",
       "password": "Teste"
     },
+
     "myInfoField": {
       "firstName":"Alex Sandro",
       "middleName": "de Paula",
@@ -14,6 +16,8 @@
       "employeeId": "resum",
       "otherId": "1234567",
       "driversLicenseNumber": "DriveLicenseTeste",
-      "licenseExpiryDate": "2024-03-03"
+      "licenseExpiryDate": "2024-03-03",
+      "nationality": "Saudi",
+      "maritalStatus": "Married"
     }
   }
